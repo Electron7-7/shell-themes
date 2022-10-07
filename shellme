@@ -1,0 +1,11 @@
+autoload -Uz vcs_info
+
+source $ZPROMPT/$1
+
+prompt_opts=(cr subst percent)
+zstyle ':vcs_info:*' enable git svn darcs bzr hg
+zstyle ':vcs_info:*' stagedstr "S"
+zstyle ':vcs_info:*' unstagedstr "U"
+zstyle ':vcs_info:*' check-for-changes false
+zstyle ':vcs_info:*' formats " (%s)-[%b]%u%c-"
+
