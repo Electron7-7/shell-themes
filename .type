@@ -1,0 +1,6 @@
+#!/bin/bash
+msg=$@
+
+for (( i = 0 ; i < ${#msg} ; i++ )); do
+	echo -n "${msg:$i:1}"; sleep .06
+done

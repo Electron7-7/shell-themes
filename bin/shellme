@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [[ -e ./bash/$1 ]]; then
+	source ./bash/$1
+elif [[ -e ./zsh/$1 ]]; then
+	source ./zsh/$1
+fi
